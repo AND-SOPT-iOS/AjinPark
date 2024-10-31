@@ -7,58 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C33D8EC2CB6F74A00B7FE51 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3C33D8EB2CB6F74A00B7FE51 /* SnapKit */; };
+		3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF15F512CC634DA000AE59E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CA82ED02CB10195009BB2AD /* 35-seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35-seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF15F292CC634A7000AE59E /* Toss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3CA82EE22CB10197009BB2AD /* Exceptions for "35-seminar" folder in "35-seminar" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3CA82ECF2CB10195009BB2AD /* 35-seminar */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3CA82ED22CB10195009BB2AD /* 35-seminar */ = {
+		3CF15F2B2CC634A7000AE59E /* Toss */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3CA82EE22CB10197009BB2AD /* Exceptions for "35-seminar" folder in "35-seminar" target */,
-			);
-			path = "35-seminar";
+			path = Toss;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3CA82ECD2CB10195009BB2AD /* Frameworks */ = {
+		3CF15F262CC634A7000AE59E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C33D8EC2CB6F74A00B7FE51 /* SnapKit in Frameworks */,
+				3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CA82EC72CB10195009BB2AD = {
+		3CF15F202CC634A7000AE59E = {
 			isa = PBXGroup;
 			children = (
-				3CA82ED22CB10195009BB2AD /* 35-seminar */,
-				3CA82ED12CB10195009BB2AD /* Products */,
+				3CF15F2B2CC634A7000AE59E /* Toss */,
+				3CF15F2A2CC634A7000AE59E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3CA82ED12CB10195009BB2AD /* Products */ = {
+		3CF15F2A2CC634A7000AE59E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CA82ED02CB10195009BB2AD /* 35-seminar.app */,
+				3CF15F292CC634A7000AE59E /* Toss.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,40 +53,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CA82ECF2CB10195009BB2AD /* 35-seminar */ = {
+		3CF15F282CC634A7000AE59E /* Toss */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA82EE32CB10197009BB2AD /* Build configuration list for PBXNativeTarget "35-seminar" */;
+			buildConfigurationList = 3CF15F3C2CC634A9000AE59E /* Build configuration list for PBXNativeTarget "Toss" */;
 			buildPhases = (
-				3CA82ECC2CB10195009BB2AD /* Sources */,
-				3CA82ECD2CB10195009BB2AD /* Frameworks */,
-				3CA82ECE2CB10195009BB2AD /* Resources */,
+				3CF15F252CC634A7000AE59E /* Sources */,
+				3CF15F262CC634A7000AE59E /* Frameworks */,
+				3CF15F272CC634A7000AE59E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3CA82ED22CB10195009BB2AD /* 35-seminar */,
+				3CF15F2B2CC634A7000AE59E /* Toss */,
 			);
-			name = "35-seminar";
+			name = Toss;
 			packageProductDependencies = (
-				3C33D8EB2CB6F74A00B7FE51 /* SnapKit */,
+				3CF15F512CC634DA000AE59E /* SnapKit */,
 			);
-			productName = "35-seminar";
-			productReference = 3CA82ED02CB10195009BB2AD /* 35-seminar.app */;
+			productName = Toss;
+			productReference = 3CF15F292CC634A7000AE59E /* Toss.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3CA82EC82CB10195009BB2AD /* Project object */ = {
+		3CF15F212CC634A7000AE59E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					3CA82ECF2CB10195009BB2AD = {
+					3CF15F282CC634A7000AE59E = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -111,23 +98,23 @@
 				en,
 				Base,
 			);
-			mainGroup = 3CA82EC72CB10195009BB2AD;
+			mainGroup = 3CF15F202CC634A7000AE59E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3C33D8EA2CB6F74A00B7FE51 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3CA82ED12CB10195009BB2AD /* Products */;
+			productRefGroup = 3CF15F2A2CC634A7000AE59E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CA82ECF2CB10195009BB2AD /* 35-seminar */,
+				3CF15F282CC634A7000AE59E /* Toss */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3CA82ECE2CB10195009BB2AD /* Resources */ = {
+		3CF15F272CC634A7000AE59E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,7 +124,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3CA82ECC2CB10195009BB2AD /* Sources */ = {
+		3CF15F252CC634A7000AE59E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -147,15 +134,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3CA82EE42CB10197009BB2AD /* Debug */ = {
+		3CF15F3D2CC634A9000AE59E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF7MMH78WZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35-seminar/Info.plist";
+				INFOPLIST_FILE = Toss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -165,7 +153,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "umc.-5-seminar";
+				PRODUCT_BUNDLE_IDENTIFIER = sopt.Toss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -173,15 +161,16 @@
 			};
 			name = Debug;
 		};
-		3CA82EE52CB10197009BB2AD /* Release */ = {
+		3CF15F3E2CC634A9000AE59E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF7MMH78WZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35-seminar/Info.plist";
+				INFOPLIST_FILE = Toss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -191,7 +180,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "umc.-5-seminar";
+				PRODUCT_BUNDLE_IDENTIFIER = sopt.Toss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -199,7 +188,7 @@
 			};
 			name = Release;
 		};
-		3CA82EE62CB10197009BB2AD /* Debug */ = {
+		3CF15F3F2CC634A9000AE59E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		3CA82EE72CB10197009BB2AD /* Release */ = {
+		3CF15F402CC634A9000AE59E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,17 +313,17 @@
 		3CF15F242CC634A7000AE59E /* Build configuration list for PBXProject "toss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CA82EE62CB10197009BB2AD /* Debug */,
-				3CA82EE72CB10197009BB2AD /* Release */,
+				3CF15F3F2CC634A9000AE59E /* Debug */,
+				3CF15F402CC634A9000AE59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CA82EE32CB10197009BB2AD /* Build configuration list for PBXNativeTarget "35-seminar" */ = {
+		3CF15F3C2CC634A9000AE59E /* Build configuration list for PBXNativeTarget "Toss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CA82EE42CB10197009BB2AD /* Debug */,
-				3CA82EE52CB10197009BB2AD /* Release */,
+				3CF15F3D2CC634A9000AE59E /* Debug */,
+				3CF15F3E2CC634A9000AE59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -342,7 +331,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3C33D8EA2CB6F74A00B7FE51 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -353,12 +342,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3C33D8EB2CB6F74A00B7FE51 /* SnapKit */ = {
+		3CF15F512CC634DA000AE59E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3C33D8EA2CB6F74A00B7FE51 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 3CA82EC82CB10195009BB2AD /* Project object */;
+	rootObject = 3CF15F212CC634A7000AE59E /* Project object */;
 }
