@@ -39,12 +39,19 @@ class PopularTableViewCell: UITableViewCell {
         $0.textColor = .gray
     }
     
-    private let downloadButton = UIButton(type: .system).then {
-        $0.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        $0.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
-        $0.layer.cornerRadius = 10
-        $0.setTitleColor(.black, for: .normal)
-    }
+    private lazy var downloadButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("받기", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
+        button.layer.cornerRadius = 15
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.snp.makeConstraints { make in
+            make.width.equalTo(70)
+            make.height.equalTo(30)
+        }
+        return button
+    }()
     
     private let verticalStackView = UIStackView().then {
         $0.axis = .vertical
@@ -61,7 +68,7 @@ class PopularTableViewCell: UITableViewCell {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) 메서드는 구현되지 않았습니다.")
     }
     
     private func setStyle() {

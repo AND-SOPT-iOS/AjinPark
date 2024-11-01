@@ -4,18 +4,17 @@
 //  Created by 어진 on 11/1/24.
 //
 
-
 import UIKit
 import SnapKit
 
 class PopularViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     private let scrollView = UIScrollView().then {
-        $0.backgroundColor = .white // scrollView의 배경색을 흰색으로 설정하여 검은 화면 제거
+        $0.backgroundColor = .white
     }
     
     private let contentView = UIView().then {
-        $0.backgroundColor = .white // contentView의 배경색도 흰색으로 설정
+        $0.backgroundColor = .white
     }
     
     private let titleLabel: UILabel = {
@@ -32,7 +31,6 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         segmentedControl.selectedSegmentTintColor = .white
-      
         return segmentedControl
     }()
     
@@ -40,12 +38,12 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         let tableView = UITableView()
         tableView.register(PopularTableViewCell.self, forCellReuseIdentifier: PopularTableViewCell.identifier)
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 100 // 예상 높이를 충분히 확보
+        tableView.estimatedRowHeight = 100 
         tableView.isScrollEnabled = false
         return tableView
     }()
     
-    private var savedItems = App.sampleApps // App 모델의 sampleApps 사용
+    private var savedItems = App.sampleApps
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +93,6 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         
-        // 테이블 뷰 제약 설정
         tableView.snp.makeConstraints { make in
             make.top.equalTo(segmentControl.snp.bottom).offset(30)
             make.leading.trailing.equalToSuperview().inset(10)
@@ -122,5 +119,11 @@ class PopularViewController: UIViewController, UITableViewDataSource, UITableVie
         
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let selectedApp = savedItems[indexPath.row]
+        if selectedApp.title == "토스" {
+            let detailViewController = TossDetailViewController() 
+            navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
 }

@@ -101,7 +101,7 @@ struct App {
         App(
             iconImage: "9.png",
             ranking: 9,
-            title: "토스",
+            title: "인스타그램",
             subTitle: "간편 송금과 결제",
             category: .finance,
             downloadState: .download
