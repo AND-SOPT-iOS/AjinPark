@@ -14,7 +14,7 @@ class ReviewView: UIView {
         let scrollView = UIScrollView()
         scrollView.showsHorizontalScrollIndicator = true
         scrollView.alwaysBounceHorizontal = true
-        scrollView.clipsToBounds = false // ScrollView가 클립하지 않도록 설정
+        scrollView.clipsToBounds = false
         return scrollView
     }()
     
@@ -61,7 +61,6 @@ class ReviewView: UIView {
     }
     
     private func createReviewStackView() -> UIView {
-        // containerView에 그림자와 스타일 적용
         let containerView = UIView()
         containerView.backgroundColor = .white
         containerView.layer.cornerRadius = 10
@@ -72,7 +71,6 @@ class ReviewView: UIView {
         containerView.layer.borderColor = UIColor.lightGray.cgColor
         containerView.layer.masksToBounds = false // 그림자가 잘리지 않도록 설정
 
-        // stackView를 생성하고 containerView에 추가
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 8
@@ -99,20 +97,18 @@ class ReviewView: UIView {
 
         let reviewContentLabel = UILabel()
         reviewContentLabel.text = """
-        시험기간에 공부 안하고 과제하기 나름 재밌고 짜릿하다 공부해야되는데 계속 삐걱거리는 UI를 두고 갈 수가 없네 어떡해!!!!!!!!!!!!!!!!
+        말도 안돼 ㅜㅜㅜㅜㅜㅜㅜ 내 UI 어떡해.......................................................................................
         """
         reviewContentLabel.numberOfLines = 0
         reviewContentLabel.font = UIFont.systemFont(ofSize: 14)
 
-        // stackView에 모든 요소 추가
         stackView.addArrangedSubview(reviewTitleLabel)
         stackView.addArrangedSubview(ratingDateStackView)
         stackView.addArrangedSubview(reviewContentLabel)
 
-        // containerView에 stackView 추가
         containerView.addSubview(stackView)
         stackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(10) // 내부 마진 추가
+            make.edges.equalToSuperview().inset(10)
         }
 
         return containerView
