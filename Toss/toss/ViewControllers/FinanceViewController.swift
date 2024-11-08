@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class FinanceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(FinanceAppTableViewCell.self, forCellReuseIdentifier: FinanceAppTableViewCell.identifier)
