@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C32717E2CD3F1AA0007BCBB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3C32717D2CD3F1AA0007BCBB /* Then */; };
+		3C3271C62CD5F0EF0007BCBB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3C3271C52CD5F0EF0007BCBB /* Alamofire */; };
 		3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF15F512CC634DA000AE59E /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3271C62CD5F0EF0007BCBB /* Alamofire in Frameworks */,
 				3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */,
 				3C32717E2CD3F1AA0007BCBB /* Then in Frameworks */,
 			);
@@ -88,6 +90,7 @@
 			packageProductDependencies = (
 				3CF15F512CC634DA000AE59E /* SnapKit */,
 				3C32717D2CD3F1AA0007BCBB /* Then */,
+				3C3271C52CD5F0EF0007BCBB /* Alamofire */,
 			);
 			productName = Toss;
 			productReference = 3CF15F292CC634A7000AE59E /* Toss.app */;
@@ -120,6 +123,7 @@
 			packageReferences = (
 				3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3C32717C2CD3F1AA0007BCBB /* XCRemoteSwiftPackageReference "Then" */,
+				3C3271C42CD5F0EF0007BCBB /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3CF15F2A2CC634A7000AE59E /* Products */;
@@ -208,6 +212,8 @@
 		};
 		3CF15F3F2CC634A9000AE59E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3CF15F2B2CC634A7000AE59E /* Toss */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -271,6 +277,8 @@
 		};
 		3CF15F402CC634A9000AE59E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 3CF15F2B2CC634A7000AE59E /* Toss */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -357,6 +365,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		3C3271C42CD5F0EF0007BCBB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
 		3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -372,6 +388,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C32717C2CD3F1AA0007BCBB /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		3C3271C52CD5F0EF0007BCBB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C3271C42CD5F0EF0007BCBB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		3CF15F512CC634DA000AE59E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
