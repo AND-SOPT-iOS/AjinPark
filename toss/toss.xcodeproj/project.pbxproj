@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C32717E2CD3F1AA0007BCBB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3C32717D2CD3F1AA0007BCBB /* Then */; };
 		3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF15F512CC634DA000AE59E /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -14,9 +15,23 @@
 		3CF15F292CC634A7000AE59E /* Toss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3C32717F2CD3F4750007BCBB /* Exceptions for "Toss" folder in "Toss" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Main.storyboard",
+				Info.plist,
+			);
+			target = 3CF15F282CC634A7000AE59E /* Toss */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3CF15F2B2CC634A7000AE59E /* Toss */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3C32717F2CD3F4750007BCBB /* Exceptions for "Toss" folder in "Toss" target */,
+			);
 			path = Toss;
 			sourceTree = "<group>";
 		};
@@ -28,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF15F522CC634DA000AE59E /* SnapKit in Frameworks */,
+				3C32717E2CD3F1AA0007BCBB /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +87,7 @@
 			name = Toss;
 			packageProductDependencies = (
 				3CF15F512CC634DA000AE59E /* SnapKit */,
+				3C32717D2CD3F1AA0007BCBB /* Then */,
 			);
 			productName = Toss;
 			productReference = 3CF15F292CC634A7000AE59E /* Toss.app */;
@@ -84,14 +101,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					3CF15F282CC634A7000AE59E = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 3CF15F242CC634A7000AE59E /* Build configuration list for PBXProject "toss" */;
+			buildConfigurationList = 3CF15F242CC634A7000AE59E /* Build configuration list for PBXProject "Toss" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -102,6 +119,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3C32717C2CD3F1AA0007BCBB /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3CF15F2A2CC634A7000AE59E /* Products */;
@@ -310,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CF15F242CC634A7000AE59E /* Build configuration list for PBXProject "toss" */ = {
+		3CF15F242CC634A7000AE59E /* Build configuration list for PBXProject "Toss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CF15F3F2CC634A9000AE59E /* Debug */,
@@ -331,6 +349,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3C32717C2CD3F1AA0007BCBB /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -342,6 +368,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3C32717D2CD3F1AA0007BCBB /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C32717C2CD3F1AA0007BCBB /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		3CF15F512CC634DA000AE59E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3CF15F502CC634DA000AE59E /* XCRemoteSwiftPackageReference "SnapKit" */;
